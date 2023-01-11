@@ -12,33 +12,72 @@
   </head>
   <body>
     <section class="bg-white min-h-screen flex justify-between">
-      <div class="flex">
-        <div class="bg-primary w-1/2 p-5">
-          <img src="./public/picture/Ecommerce web page-bro.svg" alt="" />
-          <img src="./public/picture/logo LASIS.png" alt="" />
-          <p class="text-center">Masuk dan nikmati kemudahan <span class="text-primary">Lapak Siswa</span></p>
+      <div class="flex w-full">
+        <div class="bg-primary flex flex-col w-1/2">
+          <div class="my-auto">
+            <img src="./public/picture/Ecommerce web page-bro.svg" alt="" class="max-w-sm m-auto" />
+            <img src="./public/picture/Lasis logo.png" alt="" class="m-auto" />
+            <p class="text-center">Masuk dan nikmati kemudahan <span class="text-primary">Lapak Siswa</span></p>
+          </div>
         </div>
-        <div class="w-1/2 px-16 py-16">
+        <div class="w-1/2 px-44 py-16">
           <h1 class="font-medium text-2xl">Masuk</h1>
           <p class="font-normal">Belum punya akun LASIS? <a href="#" class="text-primary font-semibold">daftar</a></p>
           <form>
             <div class="mb-4">
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
-              <input type="email" id="email" class="bg-gray-50 border border-primary text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Email" required />
+              <input type="email" id="email" class="bg-gray-50 border border-primary text-gray-900 text-sm rounded-lg block w-[400px] p-2.5" placeholder="Email" required />
             </div>
-            <div class="mb-4">
+            <div class="mb-4 relative w-[400px]">
               <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Kata Sandi</label>
-              <input type="password" id="password" class="bg-gray-50 border border-primary text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Kata Sandi" required />
+              <input type="password" id="password" class="bg-gray-50 border border-primary text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[400px] p-2.5" placeholder="Kata Sandi" required />
+              <iconify-icon icon="ic:outline-remove-red-eye" id="eye" class="absolute top-[42px] right-5" onclick="toggle()"></iconify-icon>
             </div>
             <div class="flex items-start mb-6">
               <div class="flex items-center h-5">
-                <h1 class="text-primary">Lupa Kata Sandi ?</h1>
+                <a href="#" class="text-primary">Lupa Kata Sandi?</a>
               </div>
             </div>
-            <button type="submit" class="text-white bg-secondary hover:opacity-80 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">Masuk</button>
+            <button type="submit" class="text-white bg-secondary hover:opacity-80 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-[400px] px-5 py-2.5 text-center">Masuk</button>
           </form>
+          <p class="text-gray-900 py-4 text-center">atau masuk dengan</p>
+          <div class="container w-full flex justify-between">
+            <div class="w-1/2">
+              <a href="#">
+                <div class="g-sign-in-button px-4">
+                  <div class="content-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="./public/picture/google.png" alt="" />
+                    </div>
+                    <span class="text-container">
+                      <span>Google</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-1/2">
+              <a href="#">
+                <div class="f-sign-in-button px-4">
+                  <div class="content-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="./public/picture/facebook.png" alt="" />
+                    </div>
+                    <span class="text-container">
+                      <span>Facebook</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="./public/js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </html>
