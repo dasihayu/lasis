@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapak Siswa</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  </head>
 
-<<<<<<< HEAD
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navbar -->
     <header class="header" id="header">
       <nav class="nav" id="nav">
@@ -26,152 +33,117 @@
       </section>
     </header>
     <!-- Akhir Navbar -->
-=======
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lapak Siswa</title>
-  <link href="./dist/output.css" rel="stylesheet" />
->>>>>>> cc2b6c764cb2359054888135e648063e1dba860e
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-</head>
-
-<body class="overflow-x-hidden">
-  <!-- Navbar -->
-  <header class="header" id="header">
-    <nav class="nav" id="nav">
-      <ul class="flex w-screen bg-secondary text-white py-3">
-        <li class="mr-8 ml-16"><a href="#">Promo</a></li>
-        <li class="mr-8"><a href="#">Bantuan</a></li>
-        <li class="mr-8"><a href="#">Tentang Kami</a></li>
-      </ul>
-    </nav>
-    <section class="navbar-desktop w-screen flex justify-evenly h-20 items-center" id="navbar-dekstop">
-      <a href="#"><img src="public/picture/Lasis logo.png" alt="" class="w-[200px]" /></a>
-      <div class="searchbar relative">
-        <input type="search" name="search" id="search"
-          class="w-[640px] h-12 px-3 outline-[#D4133B] border-primary border-2 rounded-xl" />
-        <button class="absolute top-[6px] right-2 rounded-lg bg-secondary text-white text-xl px-4 py-1"><iconify-icon
-            icon="material-symbols:search"></iconify-icon></button>
+    <!-- Carousel -->
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="#"><img src="public/picture/Banner1.png" alt="" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="public/picture/Banner2.png" alt="" /></a>
+        </div>
       </div>
-      <a href="#" class="text-[#2E3C4D]"><iconify-icon icon="material-symbols:shopping-cart-rounded"
-          class="text-secondary text-4xl"></iconify-icon></a>
-      <div class="login-register flex">
-        <a href="login.html" class="border-primary border-2 py-2 px-9 rounded-lg mr-3">Masuk</a>
-        <a href="#" class="bg-secondary py-[10px] px-9 text-white rounded-lg">Daftar</a>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- Carousel -->
+
+    <!-- Kategori -->
+    <section class="kategori px-[90px] pt-7 border border-[#2E3C4D] w-[80%] m-auto rounded-lg" id="kategori">
+      <h1 class="text-3xl">Kategori</h1>
+      <div class="flex pt-12 pb-12">
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="mdi:check-decagram" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px] text-center">Makanan & Minuman</p>
+        </a>
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="teenyicons:computer-solid" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px]">Komputer & Aksesoris</p>
+        </a>
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="ic:outline-phone-iphone" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px] text-center">Handphone & Aksesoris</p>
+        </a>
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="icon-park-outline:face-powder" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px] text-center">Perawatan & Kecantikan</p>
+        </a>
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="ic:round-backpack" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px] text-center">Tas</p>
+        </a>
+        <a href="#" class="flex flex-col items-center mr-6">
+          <iconify-icon icon="ri:pencil-ruler-line" class="text-4xl text-primary"></iconify-icon>
+          <p class="w-[90px] text-center">Alat Tulis</p>
+        </a>
       </div>
     </section>
-  </header>
-  <!-- Akhir Navbar -->
+    <!-- Kategori -->
 
-  <!-- Carousel -->
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><a href="#"><img src="public/picture/Banner1.png" alt=""></a></div>
-      <div class="swiper-slide"><a href="#"><img src="public/picture/Banner2.png" alt=""></a></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-  <!-- Carousel -->
-
-  <!-- Kategori -->
-  <section class="kategori px-[90px] pt-7 border border-[#2E3C4D] w-[80%] m-auto rounded-lg" id="kategori">
-    <h1 class="text-3xl">Kategori</h1>
-    <div class="flex pt-12 pb-12">
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="mdi:check-decagram" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px] text-center">Makanan & Minuman</p>
-      </a>
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="teenyicons:computer-solid" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px]">Komputer & Aksesoris</p>
-      </a>
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="ic:outline-phone-iphone" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px] text-center">Handphone & Aksesoris</p>
-      </a>
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="icon-park-outline:face-powder" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px] text-center">Perawatan & Kecantikan</p>
-      </a>
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="ic:round-backpack" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px] text-center">Tas</p>
-      </a>
-      <a href="#" class="flex flex-col items-center mr-6">
-        <iconify-icon icon="ri:pencil-ruler-line" class="text-4xl text-primary"></iconify-icon>
-        <p class="w-[90px] text-center">Alat Tulis</p>
-      </a>
-    </div>
-  </section>
-  <!-- Kategori -->
-
-  <!-- Produk -->
-  <section class="produk px-[10%] " id="produk">
-    <div class="promo flex items-center py-24">
-      <h1 class="mr-20 text-3xl">Promo Spesial</h1>
-      <p class="text-xl">Berakhir dalam <span class="font-semibold text-primary">12:32:45</span></p>
-    </div>
-    <div class="card flex px-4 pb-2 items-center justify-between">
-      <div class="promosi">
-        <img src="public/picture/promo.png" alt="" class="w-[240px]">
+    <!-- Produk -->
+    <section class="produk px-[10%]" id="produk">
+      <div class="promo flex items-center py-24">
+        <h1 class="mr-20 text-3xl">Promo Spesial</h1>
+        <p class="text-xl">Berakhir dalam <span class="font-semibold text-primary">12:32:45</span></p>
       </div>
-      <a href="" class="card-produk w-[180px] h-[320px] shadow-lg">
-        <img src="public/picture/foto keyboard Noir 1.png" alt="">
-        <p class="bg-secondary text-white text-center">Promo Special</p>
-        <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
-        <h1 class="font-semibold my-2">Rp 1.299.000</h1>
-        <p class="line-through">Rp 1.399.000</p>
-        <p class="font-light">Kota Semarang</p>
-        <div class="rating flex items-center">
-          <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
-          <p class="ml-3 font-light">belum ada ulasan</p>
+      <div class="card flex px-4 pb-2 items-center justify-between">
+        <div class="promosi">
+          <img src="public/picture/promo.png" alt="" class="w-[240px]" />
         </div>
-      </a>
-      <a href="#" class="card-produk w-[180px] h-[320px] shadow-lg">
-        <img src="public/picture/foto keyboard Noir 1.png" alt="">
-        <p class="bg-secondary text-white text-center">Promo Special</p>
-        <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
-        <h1 class="font-semibold my-2">Rp 1.299.000</h1>
-        <p class="line-through">Rp 1.399.000</p>
-        <p class="font-light">Kota Semarang</p>
-        <div class="rating flex items-center">
-          <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
-          <p class="ml-3 font-light">belum ada ulasan</p>
-        </div>
-      </a>
-      <a href="#" class="card-produk w-[180px] h-[320px] shadow-lg">
-        <img src="public/picture/foto keyboard Noir 1.png" alt="">
-        <p class="bg-secondary text-white text-center">Promo Special</p>
-        <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
-        <h1 class="font-semibold my-2">Rp 1.299.000</h1>
-        <p class="line-through">Rp 1.399.000</p>
-        <p class="font-light">Kota Semarang</p>
-        <div class="rating flex items-center">
-          <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
-          <p class="ml-3 font-light">belum ada ulasan</p>
-        </div>
-      </a>
-    </div>
-  </section>
-  <!-- Akhir Produk -->
-</body>
-<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <a href="" class="card-produk w-[180px] h-[320px] shadow-lg">
+          <img src="public/picture/foto keyboard Noir 1.png" alt="" />
+          <p class="bg-secondary text-white text-center">Promo Special</p>
+          <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
+          <h1 class="font-semibold my-2">Rp 1.299.000</h1>
+          <p class="line-through">Rp 1.399.000</p>
+          <p class="font-light">Kota Semarang</p>
+          <div class="rating flex items-center">
+            <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
+            <p class="ml-3 font-light">belum ada ulasan</p>
+          </div>
+        </a>
+        <a href="#" class="card-produk w-[180px] h-[320px] shadow-lg">
+          <img src="public/picture/foto keyboard Noir 1.png" alt="" />
+          <p class="bg-secondary text-white text-center">Promo Special</p>
+          <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
+          <h1 class="font-semibold my-2">Rp 1.299.000</h1>
+          <p class="line-through">Rp 1.399.000</p>
+          <p class="font-light">Kota Semarang</p>
+          <div class="rating flex items-center">
+            <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
+            <p class="ml-3 font-light">belum ada ulasan</p>
+          </div>
+        </a>
+        <a href="#" class="card-produk w-[180px] h-[320px] shadow-lg">
+          <img src="public/picture/foto keyboard Noir 1.png" alt="" />
+          <p class="bg-secondary text-white text-center">Promo Special</p>
+          <h1 class="mt-4">NOIR N1 Pro Grey - 65%</h1>
+          <h1 class="font-semibold my-2">Rp 1.299.000</h1>
+          <p class="line-through">Rp 1.399.000</p>
+          <p class="font-light">Kota Semarang</p>
+          <div class="rating flex items-center">
+            <iconify-icon icon="ic:baseline-star" class="text-[#FBBC05]"></iconify-icon>
+            <p class="ml-3 font-light">belum ada ulasan</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Akhir Produk -->
+  </body>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<script src="public/js/script.js"></script>
+  <script src="public/js/script.js"></script>
 </html>
